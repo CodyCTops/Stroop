@@ -5,24 +5,44 @@ body {
     background-position: center;
     background-size: cover;
 
-    border: 2px solid black;
-    padding: 30px;
-}
-
-.login {
-    position:absolute;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: absolute;
+    background: gainsboro; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding:40px;
     border-radius: 4px;
     box-shadow:0 15px 35px rgba(0,0,0,9);
 }
 
-h1 {
-    background-color: rgb(127, 136, 255);
+.container .signin {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px
 }
 
- p {
-    background-color: rgb(255, 127, 212);
+.container .signin h1 {
+    text-transform: uppercase;
+}
+
+.container .signin .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container .signin .form .inputBox {
+
 }
