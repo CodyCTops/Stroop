@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("../assets/loginBackground.jpg");
     background-repeat: no-repeat;
@@ -17,6 +23,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
     padding:40px;
     border-radius: 4px;
     box-shadow:0 15px 35px rgba(0,0,0,9);
@@ -29,7 +37,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 40px
+    padding: 40px;
+    border-radius: 4px;
 }
 
 .container .signin h1 {
@@ -44,5 +53,19 @@ body {
 }
 
 .container .signin .form .inputBox {
+    position: relative;
+    width: 100%
+}
 
+.container .signin .form .inputBox input {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.container .signin .form .inputBox i {
+    position: absolute;
+    font-style: normal;
+    pointer-events: none;
 }
