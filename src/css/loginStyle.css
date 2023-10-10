@@ -10,14 +10,47 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
 
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgray;
+    position: -webkit-sticky; /*safari sticky navbar*/
+    position: sticky;
+}
+
+.navBar li {
+    float: left;
+    border-right: 1px solid black;
+}
+
+.navBar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navBar li a:hover {
+    background-color: darkcyan;
+}
+
+.navBar .active {
+    background-color: darkcyan;
+}
+
+.loginBox {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.container {
+.loginBox .container {
     position: absolute;
     background: gainsboro; 
     display: flex;
@@ -30,7 +63,7 @@ body {
     box-shadow:0 15px 35px rgba(0,0,0,9);
 }
 
-.container .signin .content {
+.loginBox .container .signin .content {
     position: relative;
     width: 100%;
     display: flex;
@@ -41,24 +74,24 @@ body {
     border-radius: 4px;
 }
 
-.container .signin .content h1 {
+.loginBox .container .signin .content h1 {
     text-transform: uppercase;
     padding: 10px 10px 30px;
 }
 
-.container .signin .content .form {
+.loginBox .container .signin .content .form {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.container .signin .content .form .inputBox {
+.loginBox .container .signin .content .form .inputBox {
     position: relative;
     width: 100%
 }
 
-.container .signin .content .form .inputBox input {
+.loginBox .container .signin .content .form .inputBox input {
     position: relative;
     width: 100%;
     border: none;
@@ -67,10 +100,22 @@ body {
     border-radius: 4px;
 }
 
-.container .signin .form .inputBox i {
+.loginBox .container .signin .form .inputBox i {
     position: absolute;
     font-style: normal;
     pointer-events: none;
     left: 0;
     padding: 10px 10px;
+}
+
+.loginBox .container .signin .form .links {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginBox .container .signin .form .links a {
+    color:seagreen;
+    text-decoration: none;
 }
