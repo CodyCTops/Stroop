@@ -10,6 +10,7 @@ body {
     display: grid;
     grid-template-columns: 3, 1fr;
     grid-template-rows: minmax(100px, auto);
+    place-items: center;
 }
 
 .header {
@@ -32,9 +33,29 @@ body {
 .navLeft {
     grid-row: 1;
     grid-column: 1;
-    text-align: center;
+    height: 75%;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 16px;
     font-weight: bold;
-    border-style: solid;
+}
+
+.navLeft button {
+    position: relative;
+    top: 35%;
+    left: 25%;
+    place-items: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.navLeft button:hover {
+    background-color: #ff914d;
 }
 
 .navMid {
@@ -57,4 +78,5 @@ body {
     text-align: center;
     font-weight: bold;
     border-style: solid;
+    padding-right: 80px;
 }
