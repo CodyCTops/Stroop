@@ -1,13 +1,23 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("../assets/canalsBackground.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.picContainer {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.32), rgba(117, 19, 93, 0.73));
+}
+
+.picContainer img {
+    position: relative;
+    width: 100%;
+    z-index: -1;
 }
