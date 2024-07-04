@@ -1,6 +1,7 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Source code for all things related to the StroopTO website. This website has a very generic design and is built specifically to be expanded upon.
+I am not really sure why you are here reading this but I appreciate it. Have a great day :)
 
 ## Folder Structure
 
