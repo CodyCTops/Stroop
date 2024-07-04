@@ -1,0 +1,25 @@
+body {
+    background-image: url(../assets/Stroop_Background_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.centerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.navBox {
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: thick;
+    border-color: #ff914d;
+    background-color: #cfe3ff;
+}
