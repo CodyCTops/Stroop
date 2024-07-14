@@ -1,20 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(../assets/Stroop_Background_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #cfe3ff;
-    margin: 0;
-    font-size: 1rem;
 }
 
 .organizationBox {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    height: auto;
-    width: auto;
-    margin-top: 50px;
 }
 
 .displayBox {
@@ -38,9 +40,9 @@ body {
 }
 
 .displayBox h1 {
-    text-align: center;
-    margin: 20px;
-    width: 300px;
-    font-family: 'Montserrat';
-    font-size: 26px;
+    padding: 20px;
+}
+
+.displayBox p {
+    padding: 20px;
 }
